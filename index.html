@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a11">
+  <meta name="description" content="SpineForm: ficha de avaliação clínica online para fisioterapia de coluna. Preencha pelo navegador, utilize o mapa corporal e gere um PDF com a avaliação preenchida.">
+  <title>SpineForm — Avaliação de coluna, do navegador ao PDF</title>
+  <link rel="icon" type="image/svg+xml" href="assets/spine-symbol.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="#inicio" aria-label="SpineForm — início">
+        <img src="assets/spine-symbol.svg" width="36" height="44" alt="">
+        <span class="brand-type"><span class="brand-name">Spine<span>Form</span></span><span class="brand-tagline">Avaliação otimizada</span></span>
+      </a>
+      <nav class="navigation" id="navigation" aria-label="Navegação principal">
+        <a href="#sobre">O SpineForm</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#ficha">O que tem na ficha</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#para-quem">Para quem é</a>
+        <a href="#faq">FAQ</a>
+        <a href="#preco">Preço</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-small" href="#preco">Adquirir <span class="header-price">— <span data-price>À definir</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-rings" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow hero-badge"><span class="status-dot" aria-hidden="true"></span> Ficha de avaliação clínica online</p>
+        <h1 id="hero-title">Sua avaliação de coluna.<br><em>Mais organizada. Mais prática.</em></h1>
+        <p class="hero-description">Reúna histórico, mapa corporal, escalas clínicas e exame físico em uma ficha online. Preencha diretamente no navegador e gere um PDF com as informações da avaliação.</p>
+        <div class="hero-action">
+          <div class="hero-price"><span>Preço</span><strong data-price>À definir</strong><span>valor do SpineForm</span></div>
+          <a class="button" href="#preco">Quero o SpineForm <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="hero-benefits" aria-label="Benefícios do SpineForm">
+          <li>Sem instalação</li><li>Computador, tablet e celular</li><li>Geração de PDF</li>
+        </ul>
+        <a class="hero-explore" href="#demonstracao">Conheça a ficha por dentro <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <div class="benefit-strip" aria-label="Recursos em destaque">
+      <div class="container strip-grid">
+        <div><span class="strip-symbol" aria-hidden="true">↗</span><strong>No navegador</strong><span>Preenchimento digital</span></div>
+        <div><span class="strip-symbol" aria-hidden="true">◎</span><strong>Mapa corporal</strong><span>Registro visual de sintomas</span></div>
+        <div><span class="strip-symbol" aria-hidden="true">≡</span><strong>Escalas clínicas</strong><span>Organizadas na ficha</span></div>
+        <div><span class="strip-symbol strip-pdf" aria-hidden="true">PDF</span><strong>Documento ao final</strong><span>Avaliação em um arquivo</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="problema" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">O atendimento pede organização</p><h2 id="problem-title">A avaliação já exige atenção.<br><em>A ficha pode facilitar.</em></h2></div>
+          <p>Quando as informações ficam espalhadas, o registro compete com a escuta. Uma estrutura clara ajuda a conduzir a avaliação e a documentar o que importa.</p>
+        </div>
+        <div class="grid grid-three problem-grid">
+          <article class="problem-card"><span class="card-index">01 / ORGANIZAÇÃO</span><h3>Anotações dispersas</h3><p>Histórico em um lugar, exame físico em outro e escalas em folhas separadas dificultam a consulta das informações.</p></article>
+          <article class="problem-card"><span class="card-index">02 / FLUXO</span><h3>Interrupções na avaliação</h3><p>Alternar entre materiais e procurar campos para registrar cada etapa pode tornar o atendimento menos fluido.</p></article>
+          <article class="problem-card"><span class="card-index">03 / DOCUMENTAÇÃO</span><h3>Registros pouco estruturados</h3><p>Sem uma sequência de avaliação, fica mais difícil revisar os achados e consultar o registro em atendimentos posteriores.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="sobre" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy"><p class="eyebrow">Conheça o SpineForm</p><h2 id="about-title">Uma ficha digital.<br><em>O seu olhar clínico.</em></h2><p>O SpineForm é uma ficha de avaliação clínica online para fisioterapia de coluna. Reúne informações do paciente, histórico, sintomas, escalas e exame físico em seções organizadas.</p><p>Abra no computador, tablet, iPad ou celular, preencha durante a avaliação e gere o PDF ao final. Tudo diretamente pelo navegador.</p><a class="text-link" href="#ficha">Veja o que existe na ficha <span aria-hidden="true">↗</span></a></div>
+        <div class="evaluation-flow dark-card">
+          <div class="flow-heading"><img src="assets/spine-symbol.svg" width="30" height="38" alt=""><span class="eyebrow">Da escuta ao registro</span></div>
+          <ol><li><span>01</span><div><strong>Conheça o paciente</strong><p>Identificação, queixa e histórico.</p></div></li><li><span>02</span><div><strong>Organize a avaliação</strong><p>Mapa corporal, escalas e exame físico.</p></div></li><li><span>03</span><div><strong>Documente o atendimento</strong><p>Plano terapêutico e geração de PDF.</p></div></li></ol>
+          <div class="flow-footer"><span class="status-dot" aria-hidden="true"></span> Uma sequência para apoiar seu atendimento.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preview-section" id="demonstracao" aria-labelledby="preview-title">
+      <div class="container">
+        <div class="section-heading centered"><p class="eyebrow">Por dentro do produto</p><h2 id="preview-title">Uma visão clara.<br><em>Do início ao PDF.</em></h2><p>Informações do paciente, recursos de avaliação e documentação reunidos em uma ficha por seções.</p></div>
+        <figure class="product-preview screenshot-slot" data-screenshot-slot="avaliacao">
+          <div class="preview-toolbar"><div class="preview-window"><span aria-hidden="true" class="window-dots"><i></i><i></i><i></i></span><span>SpineForm / Avaliação clínica</span></div><span class="illustration-label">Captura real</span></div>
+          <img src="assets/spineform-avaliacao.jpg" alt="Interface real do SpineForm com navegação pelas seções, identificação do paciente e queixa principal, com os campos vazios." width="1425" height="990" loading="lazy" decoding="async">
+          <figcaption>Tela de identificação e queixa principal do SpineForm, sem dados de pacientes.</figcaption>
+        </figure>
+        <div class="preview-caption"><span class="caption-line" aria-hidden="true"></span><p>Preencha no navegador. Gere o PDF ao final.</p><span class="caption-line" aria-hidden="true"></span></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="ficha" aria-labelledby="form-title">
+      <div class="container">
+        <div class="section-heading centered"><p class="eyebrow">O que tem na ficha</p><h2 id="form-title">Cada etapa no seu lugar.<br><em>Cada informação com contexto.</em></h2><p>Uma estrutura que acompanha a avaliação, da identificação ao plano terapêutico.</p></div>
+        <div class="grid grid-three contents-grid">
+          <article class="dark-card content-card"><span class="card-index">01 / PRIMEIRA ESCUTA</span><h3>Paciente e histórico</h3><p>Identificação do paciente, queixa principal e histórico para contextualizar o atendimento.</p><div class="tags"><span>Identificação</span><span>Queixa principal</span><span>Histórico</span></div></article>
+          <article class="dark-card content-card"><span class="card-index">02 / REGISTRO DOS SINTOMAS</span><h3>Mapa e comportamento</h3><p>Mapa corporal interativo e registro do comportamento dos sintomas para organizar o relato do paciente.</p><div class="tags"><span>Mapa corporal</span><span>Sintomas</span></div></article>
+          <article class="dark-card content-card"><span class="card-index">03 / TRIAGEM CLÍNICA</span><h3>Red flags e STarT Back</h3><p>Seções para o registro de sinais de alerta e preenchimento do questionário STarT Back.</p><div class="tags"><span>Red flags</span><span>STarT Back</span></div></article>
+          <article class="dark-card content-card"><span class="card-index">04 / ESCALAS E QUESTIONÁRIOS</span><h3>Função e sintomas</h3><p>Roland-Morris, DN4 e PSFS reunidos na ficha para apoiar o registro da avaliação.</p><div class="tags"><span>Roland-Morris</span><span>DN4</span><span>PSFS</span></div></article>
+          <article class="dark-card content-card"><span class="card-index">05 / ACHADOS DA AVALIAÇÃO</span><h3>Exame e mecanismos de dor</h3><p>Campos de exame físico, mecanismos de dor e Classificação Internacional de Funcionalidade.</p><div class="tags"><span>Exame físico</span><span>Mecanismos de dor</span><span>CIF</span></div></article>
+          <article class="dark-card content-card"><span class="card-index">06 / PLANEJAMENTO</span><h3>Plano e referências</h3><p>Organização do plano terapêutico e referências bibliográficas para consulta.</p><div class="tags"><span>Plano terapêutico</span><span>Referências</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section body-section" id="mapa-corporal" aria-labelledby="body-title">
+      <div class="container body-grid">
+        <figure class="body-preview screenshot-slot dark-card" data-screenshot-slot="mapa-corporal">
+          <div class="body-preview-heading"><span class="eyebrow">Mapa corporal</span><span class="illustration-label">Captura real</span></div>
+          <img src="assets/spineform-mapa-corporal.jpg" alt="Mapa corporal real do SpineForm com vistas de frente e costas e marcações de demonstração de dor na região lombar e formigamento na coxa esquerda posterior." width="1071" height="1329" loading="lazy" decoding="async">
+          <figcaption>Mapa corporal real com marcações de demonstração. Sem dados de pacientes.</figcaption>
+        </figure>
+        <div class="body-copy"><p class="eyebrow">Mapa corporal interativo</p><h2 id="body-title">O relato ganha<br><em>uma dimensão visual.</em></h2><p>Marque diferentes regiões do corpo e tipos de sintomas durante a avaliação. Um recurso visual para complementar a descrição do paciente e organizar o registro na ficha.</p><ul class="check-list"><li>Marcação de regiões do corpo.</li><li>Registro de diferentes tipos de sintomas.</li><li>Mapa integrado ao fluxo de avaliação.</li></ul><a class="text-link" href="#preco">Leve o SpineForm para o atendimento <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="recursos" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading centered"><p class="eyebrow">Recursos que fazem diferença</p><h2 id="features-title">Menos etapas dispersas.<br><em>Mais praticidade no atendimento.</em></h2></div>
+        <div class="grid grid-three features-grid">
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">↗</span><h3>Avaliação digital</h3><p>Preencha as informações diretamente na ficha pelo navegador.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">▣</span><h3>Do computador ao iPad</h3><p>Interface responsiva para computador, tablet, iPad e celular.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">◎</span><h3>Mapa corporal interativo</h3><p>Acrescente um registro visual das regiões e dos sintomas relatados.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">≡</span><h3>Escalas organizadas</h3><p>Encontre os questionários clínicos dentro da sequência de avaliação.</p></article>
+          <article class="feature-card"><span class="feature-icon mono-icon" aria-hidden="true">PDF</span><h3>Documento ao final</h3><p>Gere o PDF com os dados preenchidos para documentar o atendimento.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">⌘</span><h3>Sem instalação</h3><p>Abra a aplicação no navegador usando o link recebido no material de acesso.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="para-quem" aria-labelledby="audience-title">
+      <div class="container audience-grid">
+        <div><p class="eyebrow">Para quem é</p><h2 id="audience-title">Para quem avalia coluna.<br><em>E prefere uma ficha digital.</em></h2><p class="audience-intro">O SpineForm foi pensado para profissionais que querem preencher a avaliação de coluna online e gerar um PDF com os dados organizados.</p></div>
+        <ul class="audience-list"><li><span aria-hidden="true">↗</span><div><strong>Fisioterapeutas</strong><p>Que desejam estruturar a avaliação clínica de coluna.</p></div></li><li><span aria-hidden="true">↗</span><div><strong>Profissionais que trabalham com coluna</strong><p>Que utilizam histórico, escalas e exame físico no atendimento.</p></div></li><li><span aria-hidden="true">↗</span><div><strong>Quem quer modernizar a ficha</strong><p>Que busca preencher e documentar a avaliação digitalmente.</p></div></li><li><span aria-hidden="true">↗</span><div><strong>Quem atende com tablet ou iPad</strong><p>Que prefere levar a ficha na tela durante a consulta.</p></div></li></ul>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="como-funciona" aria-labelledby="how-title">
+      <div class="container"><div class="section-heading centered"><p class="eyebrow">Como funciona</p><h2 id="how-title">Da compra à avaliação.<br><em>Um caminho simples.</em></h2></div>
+        <ol class="steps"><li><span class="step-number">01</span><h3>Adquira o SpineForm</h3><p>Confira o valor do SpineForm: <span data-price>À definir</span>.</p></li><li><span class="step-number">02</span><h3>Receba o material</h3><p>Após a compra, você recebe um PDF com instruções e o link de acesso.</p></li><li><span class="step-number">03</span><h3>Abra no navegador</h3><p>Acesse a ficha no computador, tablet, iPad ou celular.</p></li><li><span class="step-number">04</span><h3>Realize a avaliação</h3><p>Preencha as seções e utilize os recursos da ficha durante o atendimento.</p></li><li><span class="step-number">05</span><h3>Gere o PDF</h3><p>Ao final, gere o documento com os dados preenchidos.</p></li></ol>
+        <p class="delivery-note"><span aria-hidden="true">↗</span> O PDF recebido na compra contém o acesso à ficha online. O PDF da avaliação é gerado por você, após o preenchimento.</p>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="preco" aria-labelledby="price-title">
+      <div class="container"><div class="pricing-card dark-card"><p class="eyebrow price-badge">SpineForm · Preço</p><h2 id="price-title">Sua próxima avaliação<br><em>pode começar aqui.</em></h2><p class="price-description">Uma ficha digital para organizar o atendimento.<br>Preencha online e gere o PDF ao final.</p><div class="price-value"><strong data-price>À definir</strong></div><p class="price-term">valor do SpineForm</p><ul class="check-list price-includes"><li>Ficha de avaliação clínica online</li><li>Mapa corporal interativo</li><li>Escalas e questionários clínicos</li><li>Geração de PDF da avaliação</li><li>Computador, tablet, iPad e celular</li><li>Uso pelo navegador, sem instalação</li></ul><div class="delivery-box"><span class="delivery-icon" aria-hidden="true">↗</span><div><strong>Como você recebe</strong><p>Após a compra, você recebe um material digital em PDF com instruções e o link de acesso ao SpineForm. O preenchimento acontece na aplicação web, sem instalação, cadastro ou login. Ao final, você pode gerar um PDF com a avaliação preenchida.</p></div></div><a class="button checkout-button" data-checkout href="#" aria-disabled="true" aria-describedby="checkout-status">Comprar SpineForm <span aria-hidden="true">↗</span></a><p class="checkout-status" id="checkout-status" role="status">Compra disponível em breve.</p><noscript><p class="checkout-status">Ative o JavaScript para verificar a disponibilidade do checkout.</p></noscript></div></div>
+    </section>
+
+    <section class="section section-tinted" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout"><div class="faq-intro"><p class="eyebrow">Perguntas frequentes</p><h2 id="faq-title">Antes de começar,<br><em>tire suas dúvidas.</em></h2><p>O essencial sobre o acesso e o uso do SpineForm.</p></div><div class="faq-items">
+        <details><summary>Preciso instalar alguma coisa?<span aria-hidden="true" class="faq-plus"></span></summary><p>Não. O SpineForm funciona diretamente pelo navegador, sem necessidade de instalar um aplicativo.</p></details>
+        <details><summary>Funciona no iPad e no celular?<span aria-hidden="true" class="faq-plus"></span></summary><p>Sim. A interface é responsiva para computador, tablet, iPad e celular.</p></details>
+        <details><summary>Consigo gerar PDF da avaliação?<span aria-hidden="true" class="faq-plus"></span></summary><p>Sim. Após preencher a ficha na aplicação web, você pode gerar um PDF que apresenta as informações da avaliação de forma organizada.</p></details>
+        <details><summary>Como recebo o produto?<span aria-hidden="true" class="faq-plus"></span></summary><p>Após a compra, você recebe um material digital em PDF com instruções e o link para acessar o SpineForm. Você preenche a ficha na aplicação web, diretamente pelo navegador, e pode gerar o PDF da avaliação ao final.</p></details>
+        <details><summary>Qual é o preço do SpineForm?<span aria-hidden="true" class="faq-plus"></span></summary><p>Preço: <span data-price>À definir</span>. Consulte as condições de compra no checkout quando estiver disponível.</p></details>
+        <details><summary>Como mantenho o registro da avaliação?<span aria-hidden="true" class="faq-plus"></span></summary><p>Ao terminar o preenchimento, gere o PDF com as informações da avaliação e guarde esse arquivo para consulta posterior. O SpineForm não armazena dados de pacientes em um servidor.</p></details>
+      </div></div>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="final-title"><div class="container"><img src="assets/spine-symbol.svg" width="42" height="52" alt=""><p class="eyebrow">Avaliação otimizada</p><h2 id="final-title">Modernize suas<br><em>avaliações de coluna.</em></h2><p>Preencha a ficha online e gere um PDF organizado<br class="desktop-break"> com as informações da sua avaliação.</p><a class="button" href="#preco">Quero o SpineForm <span aria-hidden="true">↗</span></a><span class="final-price">Preço: <span data-price>À definir</span></span></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a class="brand" href="#inicio" aria-label="SpineForm — início"><img src="assets/spine-symbol.svg" width="36" height="44" alt=""><span class="brand-type"><span class="brand-name">Spine<span>Form</span></span><span class="brand-tagline">Avaliação otimizada</span></span></a><p>Ficha de avaliação clínica online para fisioterapia de coluna. Do navegador ao PDF, com organização.</p></div><nav class="footer-nav" aria-label="Navegação do rodapé"><a href="#sobre">O SpineForm</a><a href="#ficha">O que tem na ficha</a><a href="#mapa-corporal">Mapa corporal</a><a href="#como-funciona">Como funciona</a><a href="#faq">FAQ</a><a href="#preco">Preço e acesso</a></nav></div><div class="footer-bottom"><p>© <span data-year>2026</span> SpineForm. Todos os direitos reservados.</p><p>Avaliação digital. Cuidado com contexto.</p></div></div></footer>
+</body>
+</html>
